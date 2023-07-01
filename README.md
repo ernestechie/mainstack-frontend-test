@@ -12,7 +12,7 @@ Solution for the assessment test for Mainstack frontend engineering candidates.
 
 ## How to Run
 
-- First clone the project onto your machine by running `git clone git@github.com:ernestechie/lendsqr-fe-test.git`
+- First clone the project onto your machine by running `git clone git@github.com:ernestechie/mainstack-frontend-test.git`
 
 - After cloning the project, install all necessary dependencies by running
   `npm install`
