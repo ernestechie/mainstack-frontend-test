@@ -29,6 +29,7 @@ export default function DashboardLayout({ children }) {
             sidebarOpen ? setClose() : setOpen();
           }}
           className='z-20 p-2 absolute -right-4 top-16 bg-white duration-500 border-[1px] border-gray-50 rounded-md'
+          role='sidebar-toggle-button'
         >
           {sidebarOpen ? (
             <MdOutlineKeyboardArrowLeft />

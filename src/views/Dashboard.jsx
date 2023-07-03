@@ -51,7 +51,7 @@ export default function Dashboard() {
   }, []);
 
   return (
-    <div className='p-4 sm:px-8 md:px-12 lg:px-16'>
+    <div className='p-4 sm:px-8 md:px-12 lg:px-16' title='dashboard-body'>
       {isLoading ? (
         <Loading />
       ) : (

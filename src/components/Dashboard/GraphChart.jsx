@@ -12,7 +12,7 @@ const filters = [
   { value: 'all time' },
   { value: 'custom date' },
 ];
-3;
+
 const GraphChart = (props) => {
   const [current, setCurrent] = useState('all time');
   const [labels, setLabels] = useState([]);
@@ -60,6 +60,10 @@ const GraphChart = (props) => {
       <div className='grid grid-cols-12 gap-4'>
         {filters.map((filter) => (
           <button
+            role={
+              current === filter.value ? 'active-button' : 'inactive-button'
+            }
+            title='filter-button'
             key={filter.value}
             className={`col-span-4 sm:col-span-3 lg:col-span-2 font-semibold duration-300 capitalize text-sm p-2 border-[1px] rounded-full ${
               current === filter.value
@@ -96,7 +100,10 @@ const GraphChart = (props) => {
         )}
 
         {!props.data && (
-          <p className='text-3xl py-16 text-center text-red-400'>
+          <p
+            role='error-component'
+            className='text-3xl py-16 text-center text-red-400'
+          >
             Error fetching data
           </p>
         )}
